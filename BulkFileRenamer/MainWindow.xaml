@@ -1,0 +1,19 @@
+﻿<Window x:Class="BulkFileRenamer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Bulk File Renamer" Height="237.667" Width="370.513" ResizeMode="NoResize"
+        Icon="icon.png">
+    <Grid>
+        <Label Content="Find" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top"/>
+        <Label Content="Replace" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top"/>
+        <TextBox TabIndex="0" Height="23" Margin="88,70,9,0" Name="TextBoxFind" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBox TabIndex="1" Height="23" Margin="88,101,9,0" Name="TextBoxReplace" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Button TabIndex="3" Content="Find and Replace" Margin="10,160,9,0" Click="Button_Click" Height="31" VerticalAlignment="Top"/>
+        <Label Content="Exten (*.csv)" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top"/>
+        <TextBox TabIndex="2" Height="23" Margin="88,132,9,0" x:Name="TextBoxExtension" TextWrapping="Wrap" Text="*.csv" VerticalAlignment="Top"/>
+        <TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="343" Height="52">
+            Use this tool to rename all files in a single directory. Place this tool in the directory you want to rename files.
+        </TextBlock>
+
+    </Grid>
+</Window>
